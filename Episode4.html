@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Episode4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Episode4</title>
+</head>
+<body>
+    <header>
+        <h3 class="fs-1 fw-bold" data-aos="zoom-out-right"><span class="lop text-danger">ACI </span>MIXX</h3>
+    <div class="toggle" data-aos="zoom-out-left"><a href="index.html"><img src="ToyStory/toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h1 class="io text-white" data-aos="fade-right">The <span class="text-danger">Finale</span></h1>
+            <h2 class="fs-3" data-aos="fade-right">Episode 4</h2>
+            <p data-aos="zoom-in-up">
+                "Brushstrokes of Chaos: Unveiling the Misadventures of an Aspiring Artist in 'The Finale', Where turmoil fuels the creative journey towards self-discovery and redemption"..
+            </p>
+            <a href="https://youtu.be/_UMCJce0kf4?si=4Ggny9C-fXt7uCS0" class="play" data-aos="zoom-out-up" onclick="toggle();"><img src="ToyStory/play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="" controls="true"></video>
+        <img src="ToyStory/close.png" alt="" class="close" onclick="toggle();">
+    </div>
+   
+</body>
+<script>
+    function toggle(){
+    var trailer=document.querySelector('.trailer');
+    let video=document.querySelector('.video');
+    trailer.classList.toggle('active');
+    video.currentTime = 0;
+    video.pause();
+}
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
